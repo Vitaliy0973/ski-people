@@ -1,0 +1,56 @@
+.catalog {
+    overflow-x: hidden;
+    padding-bottom: 20px;
+
+    @media (min-width: 768px) {
+        padding-bottom: 32px;
+    }
+
+    @media (min-width: 768px) {
+        padding-bottom: 40px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 4px;
+    }
+
+    &__item {
+    }
+
+    &__link {
+        display: block;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.2;
+        color: #969eae;
+        background-color: #eeeff2;
+        border: 1px solid transparent;
+        border-radius: 32px;
+        padding: 11px 14px;
+        transition: all 0.3s ease 0s;
+
+        &_active {
+            color: #ffffff;
+            background-color: #0044f0;
+        }
+
+        &:hover {
+            color: #0044f0;
+            background-color: #eeeff2;
+            border: 1px solid #0044f0;
+        }
+
+        &:active {
+            color: #ffffff;
+            background-color: #0044f0;
+        }
+        
+        &:focus-visible {
+            color: #0044f0;
+            background-color: #eeeff2;
+            border: 1px solid #0044f0;
+            outline: none;
+        }
+    }
+}
