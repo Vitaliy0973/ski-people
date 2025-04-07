@@ -114,6 +114,8 @@
         }
 
         &:focus-visible {
+            color: #0044f0;
+            background-color: #e2e8f5;
             border: 1px solid #042f9c;
             outline: none;
         }
